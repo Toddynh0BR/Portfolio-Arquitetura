@@ -1,7 +1,5 @@
 const win = window as any;
 
-const ANO_INICIO_CARREIRA = 2021; 
-
 win.tailwind = win.tailwind || { config: {} };
 
 win.tailwind.config = {
@@ -27,18 +25,3 @@ win.tailwind.config = {
     }
 };
 
-// --- LÓGICA DINÂMICA (EXPERIÊNCIA) ---
-document.addEventListener('DOMContentLoaded', () => {
-    const contadorElemento = document.getElementById('contador-experiencia');
-    
-    if (contadorElemento) {
-        const anoAtual = new Date().getFullYear();
-        let anosExperiencia = anoAtual - ANO_INICIO_CARREIRA;
-        
-        if (anosExperiencia < 1) anosExperiencia = 1;
-
-        contadorElemento.innerText = `+${anosExperiencia} anos projetando sonhos`;
-    }
-});
-
-console.log("Configuração carregada. Ano atual: " + new Date().getFullYear());
