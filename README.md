@@ -2,10 +2,6 @@
 
 Uma Landing Page moderna, responsiva e de alta conversão desenvolvida para profissionais de Arquitetura e Design de Interiores. Este projeto foi criado como um modelo para apresentação de portfólio, serviços e captação de clientes de um serviço freelancer que realizei.
 
-**Link para visualização:** [Preview do Projeto](https://dioser-arquiteto.vercel.app/)
-
-![Preview do Projeto](img/site-demo.jpg)
-
 ## 🚀 Tecnologias Utilizadas
 
 Este projeto combina a simplicidade do HTML estático com o poder do TypeScript e utilitários modernos de estilização.
@@ -54,27 +50,5 @@ Você precisará do [Node.js](https://nodejs.org/) instalado para gerenciar o co
     ```bash
     git clone https://seu-usuario/seu-repositorio.git
     ```
-
-2.  **Instale as dependências:**
-    ```bash
-    npm install
-    ```
-
-3.  **Compilando o TypeScript:**
-    O navegador não lê arquivos `.ts`. Se você alterar algo na pasta `src/`, precisa rodar o comando abaixo para gerar o JavaScript final na pasta `js/`:
-    ```bash
-    npx tsc
-    ```
-    *Dica: Use `npx tsc -w` para deixar o compilador rodando automaticamente enquanto você edita.*
-
-4.  **Rodando o projeto:**
+2.  **Rodando o projeto:**
     Basta abrir o arquivo `index.html` em qualquer navegador moderno. Para uma melhor experiência de desenvolvimento, recomendo usar a extensão **Live Server** do VS Code.
-
-## ⚙️ Customização
-
-### Alterar Anos de Experiência
-Para mudar a data de início da carreira (usada no cálculo automático), edite o arquivo `src/config.ts`:
-
-```typescript
-// src/config.ts
-const ANO_INICIO_CARREIRA = 2021; // Altere para o ano desejado
